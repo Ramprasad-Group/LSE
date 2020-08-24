@@ -26,16 +26,17 @@ from multiprocessing import Pool
 args = sys.argv
 
 parent_dir = args[1]
-bond_df_path = args[2]
-n_core = int(args[3])
+bond_df_path = './static/bond_table.csv'
+n_core = int(args[2])
+
+# try:
+#     past_df_path = args[3]
+# except:
+#     past_df_path = None
+past_df_path = None
 
 try:
-    past_df_path = args[4]
-except:
-    past_df_path = None
-
-try:
-    cifs_dir = args[5]
+    cifs_dir = args[3]
 except:
     cifs_dir = parent_dir    
     
@@ -118,7 +119,8 @@ def subgraph_translate3(read_path, write_dir):
                     pass
                 count += 1
     
-    A = sg.get_subgraphs_as_molecules(use_weights=True)
+    #A = sg.get_subgraphs_as_molecules(use_weights=True)
+    A = sg.get_subgraphs_as_molecules(use_weights=False) #to fix ' KeyError: 'weight' '
     
     
     ls = []

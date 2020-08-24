@@ -1,0 +1,15 @@
+ID,SMILES
+0,CCOc1cc(ccc1C#Cc1cc(C#Cc2cc(OCC)c(c(c2)OCC)C(=O)[O])cc(c1)C#Cc1ccc(cc1OCC)C(=O)[O])C(=O)[O]
+1,CCOc1c(C#Cc2ccc(c(c2)OCC)C(=O)[O])cc(cc1C#Cc1cc(O[C]C)c(c(c1)OCC)[C][O])C#Cc1cc(OCC)c(c(c1OCC)O[C]C)[C][O].O.O
+2,COc1c(C#CC(=O)[O])cc(c(c1C#CC(=O)[O])OC)C#CC(=O)[O]
+3,[O]C(=O)C#Cc1cc(C#CC(=O)[O])cc(c1)C#CC(=O)[O]
+4,CCOc1c(C#Cc2ccc(cc2)C(=O)[O])cc(cc1C#Cc1ccc(c(c1)O[C]C)[C][O])C#Cc1cc(OCC)c(c(c1)OCC)C(=O)[O].O
+5,CCOc1cc(C(=O)[O])c(c(c1C#Cc1cc(C#Cc2ccc(cc2)C(=O)[O])cc(c1)C#Cc1cc(O[C]C)c(c(c1OCC)OCC)[C][O])OCC)OCC.O
+6,COc1c(C#CC(=O)[O])cc(c(c1C=C=[C](=O)[O])O[CH2])C#CC(=O)[O]
+7,[CH2]Oc1c(C=C=[C](=O)[O])cc(cc1C#CC(=O)[O])C#CC(=O)[O]
+8,CCOc1cc(ccc1C#Cc1cc(C#Cc2cc(O[C]C)c(c(c2)O[C]C)[C])cc(c1)C#Cc1c(OCC)cc(c(c1OCC)O[C])[C][O])C(=O)[O].O.O.O.[CH3]
+9,COc1c(C#CC(=O)[O])cc(cc1C#CC(=O)[O])C#CC(=O)[O]
+10,CCOc1c(C#Cc2ccc(c(c2)OCC)C(=O)[O])cc(cc1C#Cc1ccc(cc1OCC)C(=O)[O])C#Cc1cc(OCC)c(c(c1)OCC)C(=O)[O]
+11,CCOc1cc(cc(c1C#Cc1cc(C#Cc2cc(OCC)c(c(c2)OCC)C(=O)[O])cc(c1)C#Cc1c(OCC)cc(c(c1OCC)OCC)C(=O)[O])OCC)C(=O)[O]
+12,CCOc1c(C#Cc2ccc(cc2)C(=O)[O])cc(cc1C#Cc1c(OCC)cc(cc1OCC)C(=O)[O])C#Cc1ccc(c(c1)OCC)C(=O)[O]
+13,[CH2]Oc1c(C=C=[C](=O)[O])cc(c(c1C#CC(=O)[O])OC)C#CC(=O)[O]
