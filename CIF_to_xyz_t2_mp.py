@@ -287,7 +287,7 @@ def main4(parent_path, cifs_dir, bond_df_path, past_df_path):
     end = time.time()
     print("Runtime: ", end-start)
 
-    df = pd.DataFrame({"filename": files, "Metal ID": m_ids, "# of Linkers": n_linker,
+    df = pd.DataFrame({"filename": files, "# of Linkers": n_linker,
                         "L0_Smiles": L_Smiles[0],
                         "L1_Smiles": L_Smiles[1],
                         "L2_Smiles": L_Smiles[2],
