@@ -44,6 +44,8 @@ m_dict = {0: {"Zn": 4, "O": 1}, 1: {"Zn": 2}, 2: {"Cu": 2}, 3: {"V": 3, "O": 3},
 
 md = {0: "Zn", 1: "Zn", 2: "Cu", 3: "V", 4: "Zr"}
 
+metals = ['Li','Be','Na','Mg','Al','K','Ca','Sc','Ti','V','Cr','Mn','Fe','Co','Ni','Cu','Zn','Ga','Rb','Sr','Y','Zr','Nb','Mo','Tc','Ru','Rh','Pd','Ag','Cd','In','Sn','Cs','Ba','La','Ce','Pr','Nd','Pm','Sm','Eu','Gd','Tb','Dy','Ho','Er','Tm','Yb','Lu','Hf','Ta','W','Re','Os','Ir','Pt','Au','Hg','Tl','Pb','Bi','Po','Fr','Ra','Ac','Th','Pa','U','Np','Pu','Am','Cm','Bk','Cf','Es','Fm','Md','No','Lr','Rf','Db','Sg','Bh','Hs','Mt','Ds','Rg','Cn','Nh','Fl','Mc','Lv']
+
 
 def readCIF(path):
     f = open(path, "r")
@@ -69,17 +71,11 @@ def startsWithMetal(m_id, line):
     '''
     This function returns True if the line indicates a metal atom position
     '''
-    if m_id == 0:
-        if line.startswith('Zn'):
-            return True
-        else:
-            return False
+    #m = md[m_id]
+    if any([line.startswith(m) for m in metals]):
+        return True
     else:
-        m = md[m_id]
-        if line.startswith(m):
-            return True
-        else:
-            return False
+        return False
 
 def splitCif(cif):
     '''
@@ -201,7 +197,11 @@ def handle_file(tup):
 
     if ind % 10 == 0:
             print("\n" + str(ind+1) + " out of " + str(n_mof) + " complete.")
-    m_id = getMetalID(f)
+    try:
+        m_id = getMetalID(f)
+    except:
+        m_id = None
+
     whole_path = parent_path+f
     f_name = whole_path.split('/')[-1][:-4]
     write_dir = ('/').join(whole_path.split('/')[:-1]) + '/' + f_name + '/'
