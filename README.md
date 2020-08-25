@@ -1,5 +1,5 @@
 # LSE
-LSE = Linker SMILES Extractor. Return the SMILES strings of an input MOF's constituent linkers.
+LSE = Linker SMILES Extractor. Return the SMILES strings of several input MOFs' constituent linkers.
 
 # Installation
 Step 1: Use Python3.7 <br />
