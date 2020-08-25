@@ -27,3 +27,6 @@ python main.py ./ 2 test/inputs/
 ```
 
 The files which are produced should match the files in ```test/outputs/```
+
+# Disclaimer
+All .cif files located in ```test/inputs/``` are courtesy of the following publication: 1 C.E. Wilmer, M. Leaf, C.Y. Lee, O.K. Farha, B.G. Hauser, J.T. Hupp, and R.Q. Snurr, Nat. Chem. 4, 83 (2012).
