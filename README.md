@@ -8,6 +8,6 @@ Step 3: Install all packages listed in requirements.txt
 
 # Usage
 To use the package try the following command:
-'''python
+```python
 def foo:
-'''
+```
