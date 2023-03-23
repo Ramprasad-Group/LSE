@@ -30,3 +30,6 @@ The files which are produced should match the files in ```test/outputs/```
 
 # Disclaimer
 All .cif files located in ```test/inputs/``` are courtesy of the following publication: C.E. Wilmer, M. Leaf, C.Y. Lee, O.K. Farha, B.G. Hauser, J.T. Hupp, and R.Q. Snurr, Nat. Chem. 4, 83 (2012).
+
+# License
+This work is protected under the license titled 'LICENSE' in this repository.
